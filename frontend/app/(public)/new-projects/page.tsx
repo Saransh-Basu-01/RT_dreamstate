@@ -1,5 +1,3 @@
-import { InfoPage } from "@/components/info-page";
-
 export default function NewProjectsPage() {
   return (
     <p>Hello hello</p>

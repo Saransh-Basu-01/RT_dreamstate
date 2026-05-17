@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { communities } from "@/lib/properties";
 
 export function CommunitiesSection() {
@@ -13,9 +14,11 @@ export function CommunitiesSection() {
             className="group relative h-[400px] overflow-hidden rounded-xl"
             key={community.name}
           >
-            <img
+            <Image
               alt={`${community.name} real estate community`}
               className="h-full w-full object-cover transition duration-1000 group-hover:scale-110"
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
               src={community.image}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0a0c10]/95 via-[#0a0c10]/25 to-transparent" />

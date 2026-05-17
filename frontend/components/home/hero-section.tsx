@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PropertySearch } from "@/components/home/property-search";
 
 export function HeroSection() {
@@ -5,9 +6,12 @@ export function HeroSection() {
     // Hero Section
     <section className="relative min-h-[900px] overflow-hidden pt-6">
       <div className="absolute inset-0">
-        <img
+        <Image
           alt="Kathmandu Valley"
           className="h-full w-full object-cover opacity-70"
+          fill
+          priority
+          sizes="100vw"
           src="/assets/house.jpg"
         />
         <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.1),rgba(0,0,0,0.25),#0a0c10)]" />

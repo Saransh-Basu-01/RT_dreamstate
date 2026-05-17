@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { BadgeCheck, Bath, BedDouble, MapPin, Ruler } from "lucide-react";
 import { properties, type PropertyCategory } from "@/lib/properties";
 
@@ -28,10 +29,12 @@ export function PropertyGrid({
             className="group overflow-hidden rounded-xl border border-white/10 bg-[#1a1c20] transition hover:border-[#adc6ff]/40"
             key={`${property.location}-${property.price}`}
           >
-            <div className="h-64 overflow-hidden">
-              <img
+            <div className="relative h-64 overflow-hidden">
+              <Image
                 alt={`${property.location} property`}
                 className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                fill
+                sizes="(min-width: 768px) 33vw, 100vw"
                 src={property.image}
               />
             </div>

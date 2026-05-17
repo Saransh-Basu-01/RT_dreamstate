@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Bike,
   CarFront,
@@ -184,9 +185,11 @@ export function TravelTimeSearch() {
                   key={landmark.name}
                 >
                   <div className="relative h-52 overflow-hidden">
-                    <img
+                    <Image
                       alt={`${landmark.area} property near ${landmark.name}`}
                       className="h-full w-full object-cover transition duration-700 hover:scale-110"
+                      fill
+                      sizes="(min-width: 640px) 380px, 320px"
                       src={landmark.image}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a0c10]/55 to-transparent" />
