@@ -6,8 +6,8 @@ import {
   MarketInsightsSection,
 } from "@/components/home";
 import { SiteFooter, SiteHeader } from "@/components/layout";
-import { PropertyGrid } from "@/components/property-grid";
-import { TravelTimeSearch } from "@/components/travel-time-search";
+import { PropertyGrid } from "@/components/home/property-grid";
+import { TravelTimeSearch } from "@/components/home/travel-time-search";
 
 export default function Home() {
   return (

@@ -9,7 +9,7 @@ export function SiteHeader() {
         <Link className="flex items-center gap-3" href="/">
           <Image
             alt="RT DreamEstates logo"
-            className="h-12 w-auto object-contain"
+            className="h-20 w-auto object-contain"
             height={1500}
             priority
             src="/assets/logo.png"

@@ -1,4 +1,4 @@
-import { PropertySearch } from "@/components/property-search";
+import { PropertySearch } from "@/components/home/property-search";
 
 export function HeroSection() {
   return (

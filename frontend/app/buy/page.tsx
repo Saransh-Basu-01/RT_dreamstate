@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { SiteHeader } from "@/components/layout";
-import { PropertyGrid } from "@/components/property-grid";
-import { PropertySearch } from "@/components/property-search";
+import { PropertyGrid } from "@/components/home/property-grid";
+import { PropertySearch } from "@/components/home/property-search";
 import { buyCategories } from "@/lib/properties";
 
 export default function BuyPage() {

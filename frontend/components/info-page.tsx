@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { SiteHeader } from "@/components/layout";
-import { PropertySearch } from "@/components/property-search";
+import { PropertySearch } from "@/components/home/property-search";
 
 export function InfoPage({
   title,

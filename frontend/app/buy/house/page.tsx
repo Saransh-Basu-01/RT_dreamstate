@@ -1,6 +1,6 @@
 import { SiteHeader } from "@/components/layout";
-import { PropertyGrid } from "@/components/property-grid";
-import { PropertySearch } from "@/components/property-search";
+import { PropertyGrid } from "@/components/home/property-grid";
+import { PropertySearch } from "@/components/home/property-search";
 
 export default function BuyHousePage() {
   return (
